@@ -1,0 +1,26 @@
+services:
+  api:
+    build: ./backend
+    ports: ["8000:8000"]
+    environment:
+      DJANGO_DEBUG: "0"
+      DJANGO_ALLOWED_HOSTS: "*"            # demo only; list real hosts in production
+      DATABASE_PATH: /data/db.sqlite3
+    env_file:
+      - path: ./backend/.env               # GROQ_API_KEY for the AI assistant
+        required: false                    # everything else works without it
+    volumes:
+      - db_data:/data                      # named volume: avoids Windows bind-mount locking issues
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/groups')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+  web:
+    build: ./frontend
+    ports: ["3000:80"]
+    depends_on:
+      api:
+        condition: service_healthy
+volumes:
+  db_data:

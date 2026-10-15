@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings"
+addopts = "--cov=ledger --cov=assistant --cov-branch --cov-report=term-missing --cov-fail-under=90"
+filterwarnings = ["ignore:No directory at:UserWarning"]  # whitenoise: staticfiles/ only exists after collectstatic (Docker)
+
+[tool.coverage.run]
+omit = ["ledger/migrations/*", "ledger/tests/*", "assistant/tests/*"]

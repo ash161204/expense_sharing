@@ -1,0 +1,43 @@
+{
+  "22350881949_6b34e1c2a1_b.jpg": {
+    "items": [
+      {"name": "PUMPKIN VANILLA", "amount": "165.00"},
+      {"name": "TOMATO & CHEESE", "amount": "185.00"},
+      {"name": "CHORIZO GAMBAS", "amount": "375.00"},
+      {"name": "MARLIN TARTARE", "amount": "195.00"},
+      {"name": "BURGER STEAK", "amount": "230.00"},
+      {"name": "48 BEEF CHEESE BURGER", "amount": "420.00"},
+      {"name": "5 SPICED MARLIN - ENTREE", "amount": "355.00"},
+      {"name": "ADD GRILLED SHRIMP", "amount": "90.00"},
+      {"name": "THE GREEN GOBLET", "amount": "195.00"},
+      {"name": "SEASONAL SORBET (3 SCOOPS)", "amount": "150.00"},
+      {"name": "DECA AQUA W/ BITTERSWEET", "amount": "145.00"},
+      {"name": "SEASONAL SORBET (3 SCOOPS)", "amount": "150.00"}
+    ],
+    "subtotal": "2655.00",
+    "charges": [{"name": "SERVICE CHARGE", "amount": "237.05"}],
+    "total": "2892.05"
+  },
+  "Hotel-Receipt.png": {
+    "items": [
+      {"name": "ROOM - KING SUITE", "amount": "567.00"},
+      {"name": "ROOM SERVICE", "amount": "45.00"},
+      {"name": "PARKING (DAILY)", "amount": "50.00"},
+      {"name": "MINI BAR", "amount": "32.00"}
+    ],
+    "subtotal": "694.00",
+    "charges": [{"name": "TAX (12.5%)", "amount": "86.75"}],
+    "total": "780.75"
+  },
+  "img_6402.webp": {
+    "items": [
+      {"name": "BUTTER MILK", "amount": "50.00"},
+      {"name": "VEG LUNCH", "amount": "280.00"},
+      {"name": "KARIMEEN 1", "amount": "500.00"},
+      {"name": "KALLUMAKAI", "amount": "500.00"}
+    ],
+    "subtotal": "1330.00",
+    "charges": [],
+    "total": "1330.00"
+  }
+}

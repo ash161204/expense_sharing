@@ -1,0 +1,14 @@
+Django>=5.2,<5.3
+djangorestframework>=3.16,<3.17
+drf-spectacular>=0.28,<0.31
+gunicorn>=23
+whitenoise>=6.8
+python-dotenv>=1.0
+groq>=1.0,<2
+rapidocr>=3.0,<4
+onnxruntime>=1.20
+reportlab>=4.2,<5
+pytest>=8,<9
+pytest-django>=4.9
+pytest-cov>=6
+hypothesis>=6.100
